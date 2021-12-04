@@ -28,6 +28,8 @@ Deploy commands to just your server (useful for testing) with:
 
     npm start
 
+If you see, `pog` in the console, then the bot is up and running.
+
 Hail to the king, kupo!
 
 # Usage
