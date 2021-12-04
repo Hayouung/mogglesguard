@@ -23,6 +23,13 @@ Deploy commands to just your server (useful for testing) with:
 ... or globally with:
 
     npm run deploy:global
+    
+### Clear commands
+
+You can clear commands the same way as you deploy but instead of `deploy`, you use `clear`:
+
+    npm run clear
+    npm run clear:global
 
 ### Finally... run bot
 
