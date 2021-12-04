@@ -23,13 +23,6 @@ Deploy commands to just your server (useful for testing) with:
 ... or globally with:
 
     npm run deploy:global
-    
-### Clear commands
-
-You can clear commands the same way as you deploy but instead of `deploy`, you use `clear`:
-
-    npm run clear
-    npm run clear:global
 
 ### Finally... run bot
 
@@ -43,3 +36,11 @@ Hail to the king, kupo!
 
 - `/kupo` - random quote from the Mogglesguard
 - `/goodkingmogglemog` - Good King Moggle Mog, Good King Mog...
+
+# Clearing commands
+
+In case you decide to be a monster and want to remove the kupos, you can clear commands the same way you deploy but instead of `deploy`, you use `clear`:
+
+    npm run clear
+    npm run clear:global
+    
