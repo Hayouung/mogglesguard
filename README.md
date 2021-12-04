@@ -4,6 +4,8 @@
 
 This is a Discord bot made with [discord.js](https://discord.js.org/#/).
 
+## Getting started
+
 ### Prepare the bot for kupoing
 
 Install Node.js if you don't have it already and run `npm install` to install dependencies.
@@ -36,7 +38,9 @@ Now you will see the commands available on Discord when you start typing `/` in 
 - `/kupo` - random quote from the Mogglesguard
 - `/goodkingmogglemog` - Good King Moggle Mog, Good King Mog...
 
-# Clearing commands
+# FAQ that nobody actually asked
+
+> how clear commands?
 
 In case you decide to be a monster and want to remove the kupos, you can clear commands the same way you deploy but instead of `deploy`, you use `clear`
 
