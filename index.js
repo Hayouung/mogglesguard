@@ -6,7 +6,7 @@ const {
   MessageButton,
 } = require("discord.js");
 
-const goodKingMoggleMogLyrics = `Good King Moggle Mog
+const GOOD_KING_MOGGLE_MOG_LYRICS = `Good King Moggle Mog
 Good King Mog
 Lord of all the land (Kupo!)
 Good King Moggle Mog
@@ -52,7 +52,7 @@ What do you decree?
 What do you decree?
 Off with their heads!`;
 
-const mogglesguard = [
+const MOGGLESGUARD = [
   {
     name: "Good King Moggle Mog XII",
     quotes: [
@@ -163,10 +163,9 @@ client.on("interactionCreate", async (interaction) => {
   try {
     switch (commandName) {
       case "kupo": {
-        const moogle = randomInArray(mogglesguard);
+        const moogle = randomInArray(MOGGLESGUARD);
         const quote = randomInArray(moogle.quotes);
-        await interaction.reply(`>>> *${quote}*\n- ${moogle.name}`);
-        break;
+        return await interaction.reply(`>>> *${quote}*\n- ${moogle.name}`);
       }
 
       case "goodkingmogglemog": {
@@ -180,15 +179,14 @@ client.on("interactionCreate", async (interaction) => {
             .setLabel("Never mind")
             .setStyle("PRIMARY")
         );
-        await interaction.reply({
+        return await interaction.reply({
           content: "Good King Moggle Mog, Good King Mog...",
           components: [row],
         });
-        break;
       }
     }
   } catch {
-    await interaction.reply("ACK something went wrong");
+    return await interaction.reply("ACK something went wrong");
   }
 });
 
@@ -198,20 +196,18 @@ client.on("interactionCreate", async (interaction) => {
   try {
     switch (interaction.customId) {
       case Interactions.GOOD_KING_MOGGLE_MOG_CONFIRM: {
-        interaction.update({
-          content: `*${goodKingMoggleMogLyrics}*`,
+        return await interaction.update({
+          content: `*${GOOD_KING_MOGGLE_MOG_LYRICS}*`,
           components: [],
         });
-        break;
       }
 
       case Interactions.GOOD_KING_MOGGLE_MOG_CANCEL: {
-        interaction.update({ content: "ack", components: [] });
-        break;
+        return await interaction.update({ content: "ack", components: [] });
       }
     }
   } catch {
-    await interaction.reply("ACK something went wrong");
+    return await interaction.reply("ACK something went wrong");
   }
 });
 
