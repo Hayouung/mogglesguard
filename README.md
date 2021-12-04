@@ -4,19 +4,24 @@
 
 This is a Discord bot made with [discord.js](https://discord.js.org/#/).
 
-# Getting started
+### Prepare the bot for kupoing
 
-I expect you to have Node.js installed.
+Install Node.js if you don't have it already and run `npm install` to install dependencies.
 
-### Setup config
-
-In `example.env`, change the tokens and IDs then rename the file to `.env`.
-
+Then in `example.env`, change the tokens and IDs then rename the file to `.env`.
 Read [this](https://discordjs.guide/preparations/setting-up-a-bot-application.html) if you don't know how to get those.
+
+Then run
+
+    npm start
+
+If you see, `pog` in the console, then the bot is up and running and ready to kupo.
 
 ### Deploy commands
 
-Deploy commands to just your server (useful for testing) with:
+Before you can start kupoing though, you gotta deploy slash commands to Discord.
+
+Do this to just your server (useful for testing/dev) with
     
     npm run deploy
 
@@ -24,13 +29,7 @@ Deploy commands to just your server (useful for testing) with:
 
     npm run deploy:global
 
-### Finally... run bot
-
-    npm start
-
-If you see, `pog` in the console, then the bot is up and running.
-
-Hail to the king, kupo!
+Now you will see the commands available on Discord when you start typing `/` in chat.
 
 # Usage
 
