@@ -20,7 +20,7 @@ Deploy commands to just your server (useful for testing) with:
     
     npm run deploy
 
-... or globally with:
+... or globally with
 
     npm run deploy:global
 
@@ -39,7 +39,7 @@ Hail to the king, kupo!
 
 # Clearing commands
 
-In case you decide to be a monster and want to remove the kupos, you can clear commands the same way you deploy but instead of `deploy`, you use `clear`:
+In case you decide to be a monster and want to remove the kupos, you can clear commands the same way you deploy but instead of `deploy`, you use `clear`
 
     npm run clear
     npm run clear:global
