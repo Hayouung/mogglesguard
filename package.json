@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "deploy": "node deploy-commands.js",
-    "deploy:global": "cross-env GLOBAL=true node deploy-commands.js"
+    "deploy": "node commands.js deploy",
+    "deploy:global": "node commands.js deploy global",
+    "clear": "node commands.js clear",
+    "clear:global": "node commands.js clear global"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@discordjs/builders": "^0.9.0",
     "@discordjs/rest": "^0.1.0-canary.0",
-    "cross-env": "^7.0.3",
     "discord-api-types": "^0.25.2",
     "discord.js": "^13.3.1",
     "dotenv": "^10.0.0"
