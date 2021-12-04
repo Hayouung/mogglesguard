@@ -2,6 +2,8 @@
 
 > Hearken unto me, brave Mogglesguard! These villains shall threaten you no more!
 
+This is a Discord bot made with [discord.js](https://discord.js.org/#/).
+
 # Getting started
 
 I expect you to have Node.js installed.
