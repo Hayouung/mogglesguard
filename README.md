@@ -2,27 +2,35 @@
 
 > Hearken unto me, brave Mogglesguard! These villains shall threaten you no more!
 
+This is a Discord bot made with [discord.js](https://discord.js.org/#/).
+
 # Getting started
 
-1. Install with:
+I expect you to have Node.js installed.
 
-   npm install
+### Setup config
 
-2. In `example.env`, change the tokens and IDs.
+In `example.env`, change the tokens and IDs then rename the file to `.env`.
 
 Read [this](https://discordjs.guide/preparations/setting-up-a-bot-application.html) if you don't know how to get those.
 
-3. Deploy commands with either:
+### Deploy commands
 
-   npm run deploy
+Deploy commands to just your server (useful for testing) with:
+    
+    npm run deploy
 
-for just your server or
+... or globally with:
 
     npm run deploy:global
 
-for all the servers.
+### Finally... run bot
 
-4. Hail to the king, kupo!
+    npm start
+
+If you see, `pog` in the console, then the bot is up and running.
+
+Hail to the king, kupo!
 
 # Usage
 
